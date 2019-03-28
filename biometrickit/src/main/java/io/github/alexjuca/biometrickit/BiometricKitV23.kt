@@ -69,9 +69,10 @@ open class BiometricKitV23 {
 
                     override fun onAuthenticationSucceeded(result: FingerprintManagerCompat.AuthenticationResult?) {
                         super.onAuthenticationSucceeded(result)
-                        dismiss()
-                        biometricKitCallback.onAuthenticationSuccessful()
-
+                        if (biometricKitDialogV23.isShowing) {
+                            dismiss()
+                            biometricKitCallback.onAuthenticationSuccessful()
+                        }
                     }
                 }, null)
             if (showDialog) {
