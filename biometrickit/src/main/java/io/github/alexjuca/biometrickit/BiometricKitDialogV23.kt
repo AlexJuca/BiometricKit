@@ -51,6 +51,7 @@ class BiometricKitDialogV23 : BottomSheetDialog, View.OnClickListener {
         description = view.findViewById(R.id.description)
         icon = view.findViewById(R.id.biometric_image)
         cancel = view.findViewById(R.id.cancel_and_dismiss)
+        instructions = view.findViewById(R.id.finger_print_instructions)
     }
 
     fun setTitle(title: String) {

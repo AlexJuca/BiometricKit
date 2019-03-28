@@ -8,4 +8,5 @@
 
 <resources>
     <string name="app_name">BiometricKit</string>
+    <string name="biometric_authentication_failed">Not recognized</string>
 </resources>

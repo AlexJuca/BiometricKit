@@ -13,7 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="330dp"
         android:layout_gravity="bottom"
-        android:background="@drawable/rounded_corner" android:id="@+id/wrapper" android:padding="24dp">
+        style="@style/BottomSheetDialogTheme"
+        android:background="@drawable/rounded_corner"
+        android:id="@+id/wrapper"
+        android:padding="24dp">
 
 
     <TextView
@@ -22,7 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/title"
-            android:textAlignment="center"
+            android:gravity="left"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Confirm Payment"
             android:textSize="18sp" android:textColor="@android:color/black"
@@ -34,9 +37,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/subtitle"
             tools:text="corextechnologies@gmail.com"
-            android:textAlignment="center"
+            android:gravity="left"
             app:layout_constraintTop_toBottomOf="@+id/title"
-            android:layout_marginTop="8dp" android:textColor="@android:color/black"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
             android:fontFamily="@font/product_sans_regular"/>
     <TextView
             android:layout_width="0dp"
