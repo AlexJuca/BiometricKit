@@ -11,11 +11,13 @@ package io.github.alexjuca.biometrickitdemo
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import io.github.alexjuca.biometrickit.BiometricKit
 import io.github.alexjuca.biometrickit.BiometricKitCallback
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var prompt: BiometricKit
 
     private val biometricKitCallback: BiometricKitCallback = object: BiometricKitCallback {
         override fun onSdkVersionNotSupported() {
@@ -43,11 +45,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun onAuthenticationCancelled() {
-
+            prompt.authenticate(this, false)
         }
 
         override fun onAuthenticationSuccessful() {
-
+            Toast.makeText(this@MainActivity, "Bought successfully", Toast.LENGTH_SHORT).show()
         }
 
         override fun onAuthenticationHelp(helpCode: Int, helpString: CharSequence?) {
@@ -64,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val prompt: BiometricKit = BiometricKit.BiometricBuilder(this as Context)
+        prompt = BiometricKit.BiometricBuilder(this as Context)
             .setTitle("Confirm Payment")
             .setSubtitle("corextechnologies@gmail.com")
             .setDescription("Paying for Kamba Gas Service")
