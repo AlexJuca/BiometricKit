@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        prompt = BiometricKit.BiometricBuilder(this as Context)
+        val prompt = BiometricKit.BiometricBuilder(this as Context)
             .setTitle("Confirm Payment")
             .setSubtitle("corextechnologies@gmail.com")
             .setDescription("Paying for Kamba Gas Service")
