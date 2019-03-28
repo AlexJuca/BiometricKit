@@ -7,7 +7,8 @@
 
 
 
-[![](https://jitpack.io/v/AlexJuca/BiometrickKit.svg)](https://jitpack.io/#AlexJuca/Kiyo)
+[![](https://jitpack.io/v/AlexJuca/BiometricKit.svg)](https://jitpack.io/#AlexJuca/BiometricKit)
+
 
 BiometricKit is a simple to use and android fingerprint authentication Library written in pure kotlin for Android M (API 23) and above that follows the material design guidelines. <a href="https://material.io/design/platform-guidance/android-fingerprint.html#standard-fingerprint" target="_blank">Guidelines</a>
 
@@ -33,7 +34,7 @@ allprojects {
 ```
 dependencies
 {
-	implementation 'com.github.AlexJuca:Biometrickit:0.0.1'
+	implementation 'com.github.AlexJuca:BiometricKit:v0.0.1'
 }
 ```
 
