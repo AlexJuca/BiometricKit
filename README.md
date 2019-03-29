@@ -42,7 +42,15 @@ dependencies
 Usage
 ----------
 
-**Step 1:** Set up a BiometricKitCallback to handle callbacks. 
+**Step 1:** Define the permissions needed. 
+```xml
+<uses-permission android:name="android.permission.USE_BIOMETRIC"
+        android:required="false" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"
+        android:required="false" />
+```
+
+**Step 2:** Set up a BiometricKitCallback to handle callbacks. 
 ```java
 
 private val biometricKitCallback: BiometricKitCallback = object: BiometricKitCallback {
@@ -89,7 +97,7 @@ private val biometricKitCallback: BiometricKitCallback = object: BiometricKitCal
     }
 ```
 
-**Step 2:** 
+**Step 3:** 
 
 ```java
    val prompt = BiometricKit.BiometricBuilder(this as Context)
