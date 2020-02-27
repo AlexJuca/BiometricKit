@@ -123,7 +123,7 @@ open class BiometricKit : BiometricKitV23 {
             .setSubtitle(subTitle)
             .setDescription(description)
             .setNegativeButton(negativeButtonText, context.mainExecutor,
-                DialogInterface.OnClickListener { _, i -> biometricKitCallback.onAuthenticationCancelled() })
+                DialogInterface.OnClickListener { _, _ -> biometricKitCallback.onAuthenticationCancelled() })
             .build()
             .authenticate(android.os.CancellationSignal(), context.mainExecutor,
                 BiometricCallbackV28(biometricKitCallback)

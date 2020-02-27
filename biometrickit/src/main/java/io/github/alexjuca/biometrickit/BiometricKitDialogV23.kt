@@ -46,7 +46,7 @@ class BiometricKitDialogV23 : BottomSheetDialog, View.OnClickListener {
 
     constructor(@NonNull context: Context, cancelable: Boolean, onCancelListener: DialogInterface.OnCancelListener) : super(context, cancelable, onCancelListener)
 
-    fun setUpBiometricDialog() {
+    private fun setUpBiometricDialog() {
         val view = layoutInflater.inflate(R.layout.biometric_auth_bottom_sheet, null)
         setContentView(view)
         title = view.findViewById(R.id.title)
