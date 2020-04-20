@@ -12,6 +12,7 @@
 
 BiometricKit is a simple to use and android fingerprint authentication Library written in pure kotlin for Android M (API 23) and above that follows the material design guidelines. <a href="https://material.io/design/platform-guidance/android-fingerprint.html#standard-fingerprint" target="_blank">Guidelines</a>
 
+
 <img src="https://raw.githubusercontent.com/AlexJuca/BiometricKit/master/demo.png" width="360" height="640">
 
 Download
@@ -109,6 +110,12 @@ private val biometricKitCallback: BiometricKitCallback = object: BiometricKitCal
 
         prompt.authenticate(biometricKitCallback, true)
 ```
+
+Applications using Biometrickit
+-------
+If you are using AppIntro in your app and would like to be listed here, please let us know by commenting in [this issue](https://github.com/AlexJuca/BiometricKit/issues/2)!
+
+* [Usekamba](https://play.google.com/store/apps/details?id=com.usekamba.kamba.kamba)
 
 ## Version history
 ``` 0.0.1: Initial Version - 28/03/2019 ``` <br/>
