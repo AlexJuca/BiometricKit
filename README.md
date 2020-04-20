@@ -113,7 +113,7 @@ private val biometricKitCallback: BiometricKitCallback = object: BiometricKitCal
 
 Applications using Biometrickit
 -------
-If you are using AppIntro in your app and would like to be listed here, please let us know by commenting in [this issue](https://github.com/AlexJuca/BiometricKit/issues/2)!
+If you are using BiometricKit in your app and would like to be listed here, please let us know by commenting in [this issue](https://github.com/AlexJuca/BiometricKit/issues/2)!
 
 * [Usekamba](https://play.google.com/store/apps/details?id=com.usekamba.kamba.kamba)
 
